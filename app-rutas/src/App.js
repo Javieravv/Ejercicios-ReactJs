@@ -16,6 +16,7 @@ function App() {
       Hendrerit parturient habitant pharetra rutrum gravida porttitor eros feugiat. Mollis elit
       sodales taciti duis praesent id. Consequat urna vitae morbi nunc congue.
       </p>
+      <h2>Opciones</h2>
       <nav>
         <Link to='/facturas'>Facturas</Link>
         <br/>

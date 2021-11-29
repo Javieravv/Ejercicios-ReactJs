@@ -11,9 +11,9 @@ const QueryNavLink = ({to, ...props}) => {
     )
 }
 
-const Facturas = () => {
+    const Facturas = () => {
     let facturas = getFacturas()
-    let [searchParams,setSearchParams] = useSearchParams()
+    let [searchParams, setSearchParams] = useSearchParams()
     return (
         <div style={{ display: "flex"}}>
         <nav
@@ -28,9 +28,9 @@ const Facturas = () => {
                 onChange={event => { 
                     let filter = event.target.value; 
                     if (filter) { 
-                    setSearchParams({ filter }); 
+                        setSearchParams({ filter }); 
                     } else { 
-                    setSearchParams({}); 
+                        setSearchParams({}); 
                     } 
                 }} 
             />

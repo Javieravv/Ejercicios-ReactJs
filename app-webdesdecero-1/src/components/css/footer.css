@@ -1,0 +1,72 @@
+/* Css para el footer */
+
+.footer {
+    background: var(--color-primary);
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;  
+    gap: 20px;
+    align-items: center;
+}
+
+.footer__title {
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__container-icons {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.footer__container-icos:hover {
+    box-shadow: 3px 3px 3px 4px rgba(0,0,0,0.5);
+}
+
+
+.footer__icon {
+    color: inherit;
+    font-size: 30px;
+    /* text-decoration: none; */
+}
+
+.footer__icon:hover {
+    font-weight: bold;
+}
+
+.fab.footer__icon {
+    line-height: 60px;
+}
+
+
+/* Mediaqueries para dispositivos móviles y demás */
+
+@media screen and (max-width: 800px) {
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__contact {
+        grid-row: 1/2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Footer */
+}

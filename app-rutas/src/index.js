@@ -19,9 +19,9 @@ ReactDOM.render(
               <Route 
                   index 
                   element={ 
-                  <main style={{ padding: "1rem" }}> 
-                  <p>Seleccione una Factura</p> 
-                  </main> 
+                    <main style={{ padding: "1rem" }}> 
+                      <p>Seleccione una Factura</p> 
+                    </main> 
                   } 
               /> 
               <Route path=":facturaId" element={<Factura />}/>
@@ -30,7 +30,7 @@ ReactDOM.render(
             path="*"
             element={
               <main style={{ padding: "1rem" }}> 
-              <h3>No hay nada aquí...!</h3> 
+                <h3>No hay nada aquí...!</h3> 
               </main> 
             }
           />

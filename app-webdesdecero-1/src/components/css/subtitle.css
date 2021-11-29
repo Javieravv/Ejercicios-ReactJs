@@ -1,0 +1,18 @@
+/* css para el subtítulo */
+
+.subtitle {
+    color: var(--color-primary);
+    font-size: 2.8rem;
+    margin-bottom: 35px;
+}
+
+/* Mediaqueries para dispositivos móviles y demás */
+
+
+
+@media screen and (max-width: 500px) {
+    .subtitle {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,400&display=swap');
+
+:root {
+  --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+  --color-primary: #667eea;
+  --color-secondary: #764ba2;
+  --boton-padding: 20px 40px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Mediaqueries para dispositivos móviles y demás */
+
+@media screen and (max-width: 800px) {
+  :root {
+      --boton-padding: 18px 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+      --boton-padding: 18px 35px;
+  }
+}
+
+

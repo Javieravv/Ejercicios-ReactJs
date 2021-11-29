@@ -1,0 +1,105 @@
+/* Css para el componente about */
+
+.presentation {
+    padding-top: 0;
+    text-align: center;
+}
+
+.presentation__picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    /* object-position: top; */
+}
+
+.presentation__copy {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.presentation__cta {
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+}
+
+/* About */
+
+.about {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about__img {
+    text-align: center;
+}
+
+.about__img--left {
+    text-align: left;
+}
+
+.about__picture {
+    max-width: 80%;
+}
+
+.about__paragraph {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+
+/* Mediaqueries para dispositivos móviles y demás */
+
+@media screen and (max-width: 800px) {
+
+    /* about */
+
+    .presentation__copy {
+        width: 100%;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about .container {
+        padding-top: 30px;
+    }
+
+    .about__img--left {
+        text-align: center;
+    }
+
+    .about__texts:last-child {
+    grid-row: 3/4;        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* about */
+
+    .presentation__picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about {
+        row-gap: 60px;
+    }
+
+    .about.container {
+        padding-top: 10px;
+    }
+}
+
