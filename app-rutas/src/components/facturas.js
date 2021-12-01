@@ -11,7 +11,7 @@ const QueryNavLink = ({to, ...props}) => {
     )
 }
 
-    const Facturas = () => {
+const Facturas = () => {
     let facturas = getFacturas()
     let [searchParams, setSearchParams] = useSearchParams()
     return (
