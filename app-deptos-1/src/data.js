@@ -1,6 +1,6 @@
 // Aquí alojamos los departamentos y municipios.
 
-const departamentos = [
+export const departamentos = [
     {  
         id:1,
         departamento:"Amazonas",
@@ -1298,30 +1298,4 @@ const departamentos = [
         ]
     }
 ]
-
-export const getDepartamentos  = () => {
-    return departamentos
-}
-
-export const getListaDepartamentos = () => {
-    // mapeamos la lista de departamentos.
-    const listaDepartamentos = departamentos.map (departamento => {
-        return {
-            id: departamento.id,
-            departamento: departamento.departamento
-        }
-    })
-    .sort ((dep1, dep2) => {return dep1.departamento - dep2.departamento})
-    return listaDepartamentos
-}
-
-export const getListaCiudades = (idDepartamento) => {
-    const listaCiudades = departamentos.filter (departamento => departamento.id === idDepartamento)
-                                        .reduce ((acc, depto) => {
-                                            return acc = depto.ciudades
-                                        }, [])
-                                        .sort ( (item1, item2) => {return item2 < item1})
-    return listaCiudades
-}
-
 

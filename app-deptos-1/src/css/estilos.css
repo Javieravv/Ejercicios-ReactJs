@@ -1,0 +1,178 @@
+/* Estilos para los componentes. */
+
+/* Para el menú de departamentos  */
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px 0;
+}
+
+.menudepartamento {
+    width: 100%;
+    align-items: center;
+    min-height: 80px;
+    background-color: rgb(241, 235, 235);
+}
+
+.menuitems {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    /* border: solid 2px red; */
+    margin: 0 auto;
+}
+
+.itemmenu {
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    height: 60px;
+    padding: 15px 0px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.itemmenu:hover {
+    background-color: rgb(145, 139, 139);;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgb(238, 234, 234);
+    padding: 2%;
+}
+
+.title { 
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 2.5em;
+}
+
+.container section {
+    width: 98%;
+}
+
+
+.paragraph {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.selectcontainer {
+    width: 50%;
+}
+
+.selectcontainer {
+    margin: 5px 5px;
+}
+
+.containerdepartamentos {
+    display: flex;
+    flex-direction: row;
+}
+
+.select {
+    display: block;
+    height:35px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    font-size: 1.25em;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+}
+
+.botonenviar {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 45%;
+    text-align: center;
+}
+
+.botonera {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    /* align-items: stretch; */
+}
+
+.botonletra {
+    padding: 2px 2px;
+    margin: 3px;
+    min-width: 40px;
+    min-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.containermunicipio {
+    display: flex;
+}
+
+.containertotciudades {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0px 5px;
+}
+
+.containertotciudades p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.containerTotalMunicipios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.itemmunicipio {
+    display: inline-block;
+    min-width: 33%;
+    max-width: 33%;
+    min-height: 40px;
+    padding: 4px 0px;
+    border: solid 2px black;
+    margin: 1px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* Casos para responsive design */
+
+@media (max-width: 800px) {
+    .containerdepartamentos {
+        flex-direction: column;
+    }
+
+    .selectcontainer {
+        width: 100%;
+    }
+
+    .itemmunicipio {
+        min-width: 48%;
+        max-width: 48%;
+    }
+
+    .containerTotalMunicipios {
+        grid-template-columns: 1fr;
+    }
+}

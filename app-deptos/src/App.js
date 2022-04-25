@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { Formik, Form, useField } from 'formik'
+import { useState } from 'react'
 import './css/estilos.css'
 
 // // Componente Select 
@@ -42,11 +43,25 @@ const Select = ({ label, ...props}) => {
 
 
 function App() {
-  
+  const [value, setValue] = useState ({selectDepartamentos: '', selectCiudades: ''})
+
+  const handleChange = (e) => {
+    console.log('C A M B I A M O S...')
+    setValue ({
+      ...value,
+      [e.target.name]: e.target.value
+    })
+  }
+
   const departamentos = useSelector(store => store.listaDepartamentos);
   const ciudades = useSelector (store => store.listaCiudades);
   const idDepartamentoEscogido = useSelector (store => store.idDepartamentoElegido)
   const dispatch = useDispatch()
+
+  // const handleChange = (e) => {
+  //               console.log (`HeMOS CAMBIADO...${e.target.value}`)
+  //               dispatch({type:'accion 1', payload: e.target.value})
+  //           }
   
   return (
     <Formik
@@ -75,11 +90,13 @@ function App() {
               label="Departamentos"
               name='selectDepartamentos'              
               className='select'
+              onChange={handleChange}
             >
               <option value="">Seleccione un departamento</option>
               {departamentos.map( opcion => {
+                // console.log(`Key = ${opcion.departamento}-${opcion.id}`)
                 return <option 
-                        key={opcion.id}
+                        key={`${opcion.departamento}-${opcion.id}`}
                         value={opcion.id}
                         >
                           {opcion.departamento}
@@ -91,10 +108,12 @@ function App() {
                     label="Ciudades"
                     name='selectCiudades'
                     className='select'
+                    onChange={handleChange}
                   >
                     {ciudades.map( (opcion, index) => {
+                      // console.log(`Key ciudad = ${opcion}-${index}`)
                       return <option 
-                              key={index}
+                              key={`${opcion}-${index}`}
                               value={index}
                               >
                                 {opcion}
