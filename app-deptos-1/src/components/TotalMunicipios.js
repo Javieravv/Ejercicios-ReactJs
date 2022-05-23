@@ -8,7 +8,7 @@ export const TotalMunicipios = () => {
     const totCiudadesDepartamento = getTotCiudadesDepartamento()
     return (
         <div className="container">
-            <h1>Total de Municipios por Departamento</h1>
+            <h2>Total de Municipios por Departamento</h2>
             <div className="containerTotalMunicipios">
                 {
                     totCiudadesDepartamento.map ( departamento => {

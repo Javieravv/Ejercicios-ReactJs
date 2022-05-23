@@ -15,6 +15,12 @@ const MenuDepartamentos = () => {
                     <Link to="/totalmunicipios">Total Municipios</Link>
                 </li>
                 <li className='itemmenu'>
+                    <Link to="/listadepartamentos">Lista Departamentos</Link>
+                </li>
+                <li className='itemmenu'>
+                    <Link to="/listamunicipios">Lista Municipios</Link>
+                </li>
+                <li className='itemmenu'>
                     <Link to="/buscarmunicipios">Buscar</Link>
                 </li>
             </ul>

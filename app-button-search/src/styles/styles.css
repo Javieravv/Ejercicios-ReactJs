@@ -1,0 +1,57 @@
+/* Estilos para la aplicacion */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.icono-container {
+}
+
+.input-wraper {
+    position: relative;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+input {
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 35px 15px 15px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .input-wrapper {
+    position: relative;
+    width: 271px;
+  }
+  
+  .input {
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 35px 15px 15px;
+    width: 100%;
+  }
+
+  .input.password {
+    padding: 15px 35px 15px 15px;
+  }
+
+  .input-icon.password {
+    left: unset;
+    right: 12px;
+    cursor: pointer;
+  }

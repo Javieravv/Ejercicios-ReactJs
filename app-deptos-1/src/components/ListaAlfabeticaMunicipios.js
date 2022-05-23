@@ -17,10 +17,10 @@ const Boton = ( {clase, valor,  clave, children, click}) => {
 
 const ImprimeMunicipios = ({letra, municipios }) => {
     return (
-        <div className='containermunicipio'>
+        <div className='containermunicipio animate__animated animate__bounce animate__fadeInDown '>
+            { ( letra !== "" && <h2>Municipios por la letra {letra}</h2>) }
             {letra !== "" 
-                ? <div>
-                    <h2>Municipios por la letra {letra}</h2>
+                ? <div className = 'listado-municipios'>
                     {municipios.map ( (municipio, ind) => {
                         return <p 
                             className='itemmunicipio'
@@ -40,6 +40,7 @@ const ImprimeMunicipios = ({letra, municipios }) => {
 const ListaAlfabeticaMunicipios = () => {
     const [values, setValues] = useState({letra: '', ciudades: []})
     const listaLetras = getListaLetras() 
+
     const listCiudades = (e) => {
         // values.letra = e.target.value
         let varLetra = e.target.value

@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.rutaActual {
+  color: red;
+  cursor: pointer;
+}
+
+.rutaActual:hover {
+  color: rgb(218, 94, 94);
+}
+
+.card-directorio {
+  cursor: pointer;
+}
+
+.card-directorio:hover {
+  background-color: rgb(222, 209, 209);
+}
+
+.card-body span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.container-archivos {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(21rem, 1fr) );
+}
+
+footer {  
+  padding: 15px 15px;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(48%, 1fr) );
+  gap: 2%;
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+  background-color: rgb(99, 16, 16);
+  min-height: 350px;
+  color: white;
+}
+
+footer strong {
+  color: rgba(12, 12, 238, 0.959);
+  font-size: bold;
+}
+
+footer section {
+  align-items: center;
+}
+
+footer section:first-child { 
+  border-right: 3px solid white;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
