@@ -18,7 +18,8 @@ h2 {
     width: 100%;
     align-items: center;
     min-height: 80px;
-    background-color: white;
+    background-color: blue;
+    color: white;
 }
 
 .menuitems {
@@ -26,25 +27,43 @@ h2 {
     justify-content: space-between;
     flex-direction: row;
     width: 90%;
-    /* border: solid 2px red; */
     margin: 0 auto;
+    color: white;
+    /* background-color: rgb(218, 235, 31); */
+    /* height: 100%; */
 }
 
 .itemmenu {
     width: 30%;
     text-align: center;
-    display: inline-block;
-    height: 60px;
-    padding: 15px 0px;
-    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    padding: 0px 0px;
+    margin: 0px;
     cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.itemmenu a { 
+    text-decoration: none;
+    color: white;
+}
+
+.itemmenuactive {
+    background-color: rgb(234, 238, 191);
 }
 
 .itemmenu:hover {
-    background-color: rgb(145, 139, 139);
+    background-color: rgb(0, 106, 255);
+    transition-property: all;
+    transition-duration: 1s;
 }
 
-
+.itemmenu a:hover { 
+    font-weight: bold;
+}
 
 .container {
     display: flex;
@@ -170,6 +189,11 @@ label {
     overflow: hidden;
 }
 
+.itemmunicipio:hover {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
 /* Para la búsqueda */
 .searchMunicipio {
     width: 100%;
@@ -193,6 +217,19 @@ fieldset legend {
 }
 
 
+header {
+    background-color: blue;
+    margin-top: 10px;
+    min-height: 180px;
+}
+
+header p {
+    padding: 15px 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
 /* Casos para responsive design */
 
 @media (max-width: 800px) {
@@ -213,3 +250,4 @@ fieldset legend {
         grid-template-columns: 1fr;
     }
 }
+

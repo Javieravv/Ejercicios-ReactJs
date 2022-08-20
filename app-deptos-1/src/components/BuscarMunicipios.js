@@ -29,7 +29,7 @@ const ImprimeMunicipios = ({municipios }) => {
 
 export const BuscarMunicipios = () => {
     const [valuesSearchMunicipio, setvaluesSearchMunicipio] = useState({ searchMunicipio: '', searchCiudades: [] })
-    const  { searchMunicipio } = valuesSearchMunicipio
+    // const  { searchMunicipio } = valuesSearchMunicipio
     
 
     const handleChangeSearchMunicipio = (e) => {
